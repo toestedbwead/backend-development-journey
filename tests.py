@@ -1,3 +1,5 @@
 # defense is coming up so i wont be able to do exercises for a bit...
 
 # defense tomorrow ill get back to this once im free again
+
+# FINAL DAY FOR ITE IM EXCITED TO BE FREE   
