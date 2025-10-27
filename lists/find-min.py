@@ -42,3 +42,7 @@ def test_find_min():
         print(f"Input: {nums} | Expected: {expected} | Got: {result} | {'PASS' if result == expected else 'FAIL'}")
 
 test_find_min()
+
+# whats the normal case?
+# whats the edge case?
+# whats the broken case if i feed it bad input?
