@@ -13,10 +13,15 @@ def split_players_into_teams(players):
     even_numbered_list = []
     odd_numbered_list = []
    
+   # returning an error that list indices must be int or slices, so im thinking of using a for loop
+
+    # 'builtin_function_or_method' object is not subscriptable
     evenIndex = players[::2]
-    even_numbered_list[evenIndex]
-    oddIndex = players[1:2]
-    odd_numbered_list[oddIndex]
+    oddIndex = players[1::2]
+
+
+    even_numbered_list += evenIndex # adds the even indices
+    odd_numbered_list += oddIndex # adds the odd indces
 
     return even_numbered_list,odd_numbered_list
    
