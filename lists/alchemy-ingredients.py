@@ -21,7 +21,32 @@ print(percentage, missing_ingredients)
 '''
 
 def check_ingredient_match(recipe, ingredients):
-    pass
+    # recipe_list = [] # list of ingredients needed
+    # ingredients_list = [] # list of ingredients the character has
+
+    # must return a float representing the percentage of required ingredients the character has
+
+    # compare two lists / check how many ingredients the character still needs = returns percentage of "required ingredients the character has"
+    '''number_of_ingredients = len(ingredients)
+    number_of_recipes = len(recipe)
+    if recipe in ingredients: # how will i calculate this...
+        # compare how many ingredients matches the recipe
+        percentage = (number_of_recipes / number_of_ingredients) * 100
+        return percentage
+    else:
+        return "Oh no"'''
+    
+    numberOfPresentIngredient = 0
+    numberOfRequired = len(recipe)
+    missing_ingredient = []
+
+    for ingredient in recipe:
+        if ingredient in ingredients:
+            numberOfPresentIngredient += 1
+        else:
+            missing_ingredient.append(ingredient)
+    percentage = (numberOfPresentIngredient / numberOfRequired) * 100
+    return percentage, missing_ingredient
 
 # UNIT TEST
 run_cases = [

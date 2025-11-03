@@ -20,7 +20,8 @@ def split_players_into_teams(players):
     oddIndex = players[1::2]
 
 
-    even_numbered_list += evenIndex # adds the even indices
+    even_numbered_list += evenIndex # adds the even indices 
+    # add a list to a string.
     odd_numbered_list += oddIndex # adds the odd indces
 
     return even_numbered_list,odd_numbered_list
