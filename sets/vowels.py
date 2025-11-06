@@ -22,14 +22,27 @@ New Set With Values
 my_new_set = {"apple", "banana", "grape"}
 '''
 
-def count_vowels(text):
-    
-    total_vowel = 0
-    for vowel in text:
-        total_vowel += 1
-    
+'''
+lowercase_vowels = {"a", "e", "i", "o", "u"} # set of lowercase vowels
+uppercase_vowels = {"A", "E", "I", "O", "U"} # set of uppercase vowels
+'''
 
-    #unique_vowels = 
+
+
+def count_vowels(text):
+
+    vowels = {"a", "e", "i", "o", "u", "A", "E", "I", "O", "U"} # set of uppercase and lowercase vowels
+
+    counter = 0 # for character count
+
+    unique_vowels = set() # a set for unique vowels
+
+    for character in text:
+        if character in vowels:
+            counter += 1 # increment by 1
+            unique_vowels.add(character) # add vowels in unique vowels
+
+    return counter, unique_vowels
 
 # UNIT TESTS
 
