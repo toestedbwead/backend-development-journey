@@ -13,11 +13,11 @@ def process_player_record(player_id):
     
 
     try:
-        print()
+        return get_player_record(player_id)
     except IndexError:
-        print("index is too high")
+        return "index is too high"
     except Exception as e:
-        print(e)
+        return (e)
 
 # Don't edit below this line
 
